@@ -1,5 +1,5 @@
-$(document).ready(function() {
-    $("#submit").validate({
+$(document).ready(function () {
+    $("#signupForm").validate({
         rules: {
             fname: {
                 required: true,
@@ -15,20 +15,16 @@ $(document).ready(function() {
             },
             password: {
                 required: true,
-                minlength: 4,
-                maxlength:8
+                minlength: 4
             },
-            gender:{
-                required:true
+            month: {
+                required: true
             },
-            month:{
-                required:true
+            day: {
+                required: true
             },
-            day:{
-                required:true
-            },
-            year:{
-                required:true
+            year: {
+                required: true
             }
         },
         messages: {
@@ -47,19 +43,16 @@ $(document).ready(function() {
             password: {
                 required: "Please provide a password",
                 minlength: "Your password contains at least 4 characters",
-                maxlength:"Your password contains at least 8 characters"
+                maxlength: "Your password contains atmost 8 characters"
             },
-            gender:{
-                required:"Please select your gender"
+            month: {
+                required: "Select Month"
             },
-            month:{
-                required:"Select month"
+            day: {
+                required: "Select Day"
             },
-            day:{
-                required:"Select day"
-            },
-            year:{
-                required:"Select year"
+            year: {
+                required: "Select Year"
             }
         }
     });
