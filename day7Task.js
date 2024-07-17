@@ -15,7 +15,8 @@ $(document).ready(function() {
             },
             password: {
                 required: true,
-                minlength: 4
+                minlength: 4,
+                maxlength:8
             },
             month:{
                 required:true
